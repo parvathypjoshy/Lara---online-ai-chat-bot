@@ -12,7 +12,7 @@ from django.utils import timezone
 
 client = OpenAI(
     # This is the default and can be omitted
-    api_key='sk-proj-Th18mgxZAwOcW3Mddu8oT3BlbkFJCcsWsVXQhvUBSrTAP3a6',
+    api_key=os.environ.get('OPEN_AI_API'),
 )
 
 #OpenAI.api_key = OpenAI_api_key
